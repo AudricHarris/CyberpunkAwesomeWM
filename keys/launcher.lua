@@ -2,7 +2,7 @@
 local awful   = require("awful")
 local menubar = require("menubar")
 local vars    = require("config.vars")
-local videowall = require("config.videowall")
+local gifwall = require("config.gifwall")
 
 local modkey = vars.modkey
 
@@ -16,7 +16,7 @@ return require("gears").table.join(
         { description = "run prompt", group = "launcher" }),
     awful.key({ modkey }, "r", function() menubar.show() end,
         { description = "show the menubar", group = "launcher" }),
-    awful.key({ modkey, "Shift" }, "w", function() videowall.toggle() end,
+    awful.key({ modkey, "Shift" }, "w", function() gifwall.toggle() end,
         { description = "toggle video wallpaper", group = "launcher" })
     -- awful.key({ modkey }, "b", function() awful.spawn("firefox") end,
     --     { description = "browser", group = "launcher" }),
