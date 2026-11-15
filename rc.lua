@@ -16,7 +16,7 @@ awful.layout.layouts = require("config.layouts")
 
 require("config.autostart")
 require("config.screens")   -- wallpaper + tags
-require("config.videowall") -- video wallpaper (mpv), Mod+Shift+w toggles
+require("config.gifwall") -- video wallpaper (mpv), Mod+Shift+w toggles
 require("config.wibar")     -- bar, taglist, tasklist
 require("keys")             -- all keybindings (keys/init.lua)
 require("config.rules")     -- needs keys, so load after
